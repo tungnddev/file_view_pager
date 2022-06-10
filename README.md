@@ -1,7 +1,7 @@
 # File View Pager
 A plugin flutter display drive files (doc, xlsx, pdf) and images (png, jpg) in a pager, and can download each item. Just support Android and iOS. \
 With images, this plugin use [PhotoView](https://pub.dev/packages/photo_view). \
-With drive files, this plugin use [Flutter InAppWebView](https://pub.dev/packages/flutter_inappwebview) to show an google driver url, and embed files into them.
+With drive files, this plugin use [Flutter InAppWebView](https://pub.dev/packages/flutter_inappwebview) to show an google driver url, and embed files into them. \
 For more information about downloading file, please visit [Flutter Download File](https://github.com/tungnddev/file_view_pager).
 
 ![](/images/view_pager.gif)
