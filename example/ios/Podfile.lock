@@ -1,0 +1,44 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_download_file (0.0.1):
+    - Flutter
+  - flutter_inappwebview (0.0.1):
+    - Flutter
+    - flutter_inappwebview/Core (= 0.0.1)
+    - OrderedSet (~> 5.0)
+  - flutter_inappwebview/Core (0.0.1):
+    - Flutter
+    - OrderedSet (~> 5.0)
+  - OrderedSet (5.0.0)
+  - PDFNet (9.2.2.79502)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_download_file (from `.symlinks/plugins/flutter_download_file/ios`)
+  - flutter_inappwebview (from `.symlinks/plugins/flutter_inappwebview/ios`)
+  - PDFNet (from `https://www.pdftron.com/downloads/ios/cocoapods/xcframeworks/pdfnet/latest.podspec`)
+
+SPEC REPOS:
+  trunk:
+    - OrderedSet
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_download_file:
+    :path: ".symlinks/plugins/flutter_download_file/ios"
+  flutter_inappwebview:
+    :path: ".symlinks/plugins/flutter_inappwebview/ios"
+  PDFNet:
+    :podspec: https://www.pdftron.com/downloads/ios/cocoapods/xcframeworks/pdfnet/latest.podspec
+
+SPEC CHECKSUMS:
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  flutter_download_file: f953309c9a1b178aed1ac43d0ff912bce315beb5
+  flutter_inappwebview: bfd58618f49dc62f2676de690fc6dcda1d6c3721
+  OrderedSet: aaeb196f7fef5a9edf55d89760da9176ad40b93c
+  PDFNet: 39a199e3e736ca4b9f45c303d9b0459b41616be6
+
+PODFILE CHECKSUM: d153f4dcbde3c2ec19bfd4e90a3059797aa13f8a
+
+COCOAPODS: 1.11.2

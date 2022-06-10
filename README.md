@@ -1,39 +1,44 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# File View Pager
+A plugin flutter display drive files (doc, xlsx, pdf) and images (png, jpg) in a pager, and can download each item. Just support Android and iOS.\
+With images, this plugin use [PhotoView] Plugin(https://pub.dev/packages/photo_view).\
+With drive files, this plugin use [Flutter InAppWebView](https://pub.dev/packages/flutter_inappwebview) to show an google driver url, and embed files into them.
+For more information about downloading file, please visit [Flutter Download File](https://github.com/tungnddev/file_view_pager).
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
+![](/images/view_pager.gif)
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
+## iOS integration
+Add description to save image to photos (add following codes to `Info.plist` file)
+```
+<key>NSPhotoLibraryAddUsageDescription</key>
+<string>We need access to photo library so that photos can be download</string>
+```
 ## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
-```dart
-const like = 'sample';
+#### Import package:
+```
+import 'package:file_view_pager/file_view_pager.dart';
+```
+#### Open ViewPager:
+```
+openFileViewPager(
+              context,
+              FVPParam(urls: [
+                "https://www.clickdimensions.com/links/TestPDFfile.pdf",
+              ], initPosition: 0));
 ```
 
-## Additional information
+#### Custom notice message:
+```
+openFileViewPager(
+              context,
+              FVPParam(urls: [
+                "https://www.clickdimensions.com/links/TestPDFfile.pdf",
+              ], initPosition: 0),
+              text: const FVPText(
+                  successMessage: "Hura", errorMessage: "Failed"));
+```
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+## Bugs/Requests
+If you encounter any problems feel free to open an issue. If you feel the library is missing a feature, please raise a ticket on Github. Pull request are also welcome.
+
+
+
